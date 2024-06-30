@@ -18,3 +18,15 @@ I am a junior frontend developer. I love creating websites using the classic sta
 * **Perseverance**
 * **Stress resistance**
 * **Attention to detail**
+
+## Hard skills
+
+* html
+* css
+* javascript (basics)
+* php (basics)
+* react, angular (basics)
+* gulp
+* webpack
+* sass/scss
+* figma
