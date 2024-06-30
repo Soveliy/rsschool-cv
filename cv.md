@@ -30,3 +30,21 @@ I am a junior frontend developer. I love creating websites using the classic sta
 * webpack
 * sass/scss
 * figma
+
+## Code example
+
+[CodeWars](https://www.codewars.com/kata/5679aa472b8f57fb8c000047)
+
+```javascript
+function findEvenIndex(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        let leftSum = arr.slice(0, i).reduce((acc, curr) => acc + curr, 0);
+        let rightSum = arr.slice(i + 1).reduce((acc, curr) => acc + curr, 0);
+        
+        if (leftSum === rightSum) {
+            return i;
+        }
+    }
+    return -1;
+}
+```
