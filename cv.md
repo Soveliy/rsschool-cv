@@ -48,3 +48,12 @@ function findEvenIndex(arr) {
     return -1;
 }
 ```
+
+## Education 
+
+Southwest State University.Department of Information Systems and Technologies
+
+## Languages
+
+* Russian - Native
+* English - Pre-Intermediate
