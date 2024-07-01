@@ -1,0 +1,57 @@
+:root {
+    --primary-color: rgba(21,15,15,.9);  /* Глубокий синий */
+    --secondary-color: ;  /* Изумрудный */
+    --accent-color: #dd2b1c;  /* Коралловый */
+    --highlight-color: #f39c12;  /* Шафрановый */
+    --text-color: #ffffff;  /* Цвет текста (темно-синий) */
+    --background-color: #110101;  /* Цвет фона (светло-серый) */
+  }
+  
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{
+    background-color: var(--primary-color);
+}
+
+
+.menu__list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__item{
+    width: 100%;
+}
+
+.menu__link{
+    display: block;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--accent-color);
+    text-decoration: none ;
+    transition: 0.3s;
+}
+
+.menu__link:hover{
+    color: var(--text-color);
+    background-color: var(--accent-color);
+}
+
+.main{
+    padding: 25px 0;
+}
