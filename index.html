@@ -77,8 +77,8 @@
                         </ul>
                     </section>
                 </aside>
-                <div class="main__content">
-                    <div class="about" id="about">
+                <div class="main__content" id="about">
+                    <div class="about">
                         <h1 class="about__title">
                             Nikita Elagin
                         </h1>
@@ -98,12 +98,74 @@
                             </p>
                         </div>    
                     </div>
+                    <section class="section education" id="education">
+                        <h2 class="section__title">
+                            Education
+                        </h2>
+                        <p>
+                            2016 - 2020; Department of Information Systems and Technologies <br> Southwest State University, Kursk, Russia <br>
+                            Bachelor’s degree in Computer science
+                        </p>
+                    </section>
+                    <section class="code-example">
+                        <h2 class="section__title">
+                            Code example
+                        </h2>
+                        <p>
+                            You are going to be given an array of integers. Your job is to take that array and find an index N where the sum of the integers to the left of N is equal to the sum of the integers to the right of N.
+                        </p>
+                        <p>
+                            If there is no index that would make this happen, return -1.
+                        </p>
+                        <pre class="code-example__area">
+                            <code>
+function findEvenIndex(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        let leftSum = arr.slice(0, i).reduce((acc, curr) => acc + curr, 0);
+        let rightSum = arr.slice(i + 1).reduce((acc, curr) => acc + curr, 0);
+        
+        if (leftSum === rightSum) {
+            return i;
+        }
+    }
+    return -1;
+}
+                            </code>
+                        </pre>
+                    </section>
+                    <section class="section works" id="works">
+                        <h2 class="section__title">
+                            Works
+                        </h2>
+                        <div class="works__grid">
+                            <div class="works-item">
+                                <a class="works-item__image" href="images/arma_full.jpg" data-fslightbox="gallery">
+                                    <img src="images/arma.jpg" alt="">
+                                </a>
+                                <a class="works-item__name" target="_blank" href="https://soveliy.github.io/Arma/app/">
+                                    Arma shop
+                                </a>
+                                <a class="works-item__link" target="_blank" href="https://github.com/Soveliy/Arma/tree/master">source</a>
+                            </div>
+                            <div class="works-item">
+                                <a class="works-item__image" href="images/plastilin-art_full.jpg" data-fslightbox="gallery">
+                                    <img src="images/plastilin-art.jpg" height="187" width="367" alt="">
+                                </a>
+                                <a class="works-item__name" target="_blank" href="https://soveliy.github.io/PlastilinArtB24Sale/app/">
+                                    Plastilin-art landing
+                                </a>
+                                <a class="works-item__link" target="_blank" href="https://github.com/Soveliy/PlastilinArtB24Sale">source</a>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+              
             </div>
            
         </div>
     </main>
     <footer class="footer">
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.0.9/index.min.js" integrity="sha512-03Ucfdj4I8Afv+9P/c9zkF4sBBGlf68zzr/MV+ClrqVCBXWAsTEjIoGCMqxhUxv1DGivK7Bm1IQd8iC4v7X2bw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
