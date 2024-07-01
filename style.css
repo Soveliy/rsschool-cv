@@ -101,6 +101,16 @@ body{
     background-color: var(--accent-color);
 }
 
+.section__title:after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 2rem;
+    width: 20%;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
 .contacts__list{
     padding: 0;
     margin: 0;
@@ -155,3 +165,29 @@ body{
     margin-bottom: 0;
 }
 
+.list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list__item{
+    position: relative;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.list__item:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0.5rem;
+    height: 2px;
+    margin-top: -1px;
+    background-color: var(--accent-color);
+}
+
+.list__item + .list__item{
+    margin-top: 0.5rem;
+}
