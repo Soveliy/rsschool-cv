@@ -148,6 +148,11 @@ body{
 .contacts__link{
     color: var(--accent-color);
     text-decoration: none;
+    transition: opacity 0.5s;
+}
+
+.contacts__link:hover{
+    opacity: 0.8;
 }
 
 .about__title{
